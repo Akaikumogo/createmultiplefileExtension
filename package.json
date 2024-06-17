@@ -1,0 +1,36 @@
+{
+  "name": "createmultiplefile",
+  "displayName": "Create Multiple File",
+  "description": "Extension to create multiple files using an array input",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "Akaikumogo",
+  "activationEvents": [
+    "onCommand:extension.createmultiplefile"
+  ],
+  "main": "extension.ts",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createmultiplefile",
+        "title": "Create Multiple Files"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^x.x.x",
+    "typescript": "^x.x.x",
+    "vscode": "^x.x.x"
+  }
+}
